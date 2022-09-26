@@ -1,0 +1,167 @@
+@import url(./variable.css);
+
+/* MOBILE */
+@media only screen and (max-width: 1023px){
+
+/* HEADER */
+    #header{
+        height: 112px;
+        padding: 0 30px;
+    }
+    
+    .logo{
+        width: 50%;
+    }
+    
+    #navbar{
+        display: none;
+    }
+
+/* BODY */
+
+    #body{
+        background-color: #FAFAFA;
+    }
+        
+/* Slider */
+
+    #slider{
+        padding-top: 40px;
+    }
+
+    .text-content__title{
+        font-size: 1.6rem;
+        color: #737373;
+    }
+
+    .text-content__desc{ 
+        font-size: 3.6rem;
+        line-height: 4.2rem;
+        width: 90%;
+    }
+
+    .text-content__download{
+        font-size: 2.4rem;
+        font-weight: 500;
+        color: #737373;
+        line-height: 3.8rem;
+        letter-spacing: 0.02rem;
+        width: 90%;
+        margin: 0 auto 40px auto;
+    }
+
+    .text-content__control{
+        flex-direction: column;
+    }
+
+    .text-content__control button{
+        margin: 0 auto;
+    }
+    
+    .btn-download-top:last-child{
+        color: var(--primary-color);
+        border-color: var(--primary-color);
+    }
+
+    .mobile-img__wrap{
+        width: 100%;
+        display: flex;
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+
+    .mobile-img{
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+/* Content */
+
+    .contents{
+        width: 80%;
+    }
+
+    .content-heading{
+        font-size: 2.4rem;
+    }
+
+    .seperate__content-heading{
+        width: 100%;
+        margin: 0 auto;
+        border-top: 3px solid #E4E4E4;
+    }
+
+    .content-item:nth-child(odd){
+        flex-direction:column-reverse;
+    }
+
+    .content-item:nth-child(even){
+        flex-direction:column;
+    }
+
+    .content-item{
+        padding: 10px 0 80px;
+    }
+
+    .content__info{
+        text-align: center;
+    }
+
+    .content-item .content__info,
+    .content-item .content-item__img{
+        margin: 0;
+    }
+
+    .info-desc{
+        margin: 30px 0;
+    }
+
+    .info-detail{
+        margin: 30px 0 80px;
+    }
+
+/* Download */
+
+    .about-download{
+        display: flex;
+        background-color: #252B42;
+        padding: 120px 0 100px;
+    }
+
+    .about-download__content{
+        width: 80%;
+        margin: auto;
+    }
+
+    .download-desc{
+        color: #BDBDBD;
+        line-height: 3.8rem;
+        width: 76%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-download__content button{
+        margin: 0 10px;
+    }
+
+ /*FOOTER  */
+
+    #footer{
+        flex-direction: column;
+        justify-content: center;
+    }   
+
+    .footer-logo__wrap{
+        display: none;
+    }
+
+    .socials{
+        margin-bottom: 16px;
+    }
+
+/* OTHER */
+    .btn + .btn{
+        margin-top: 20px;
+    }
+}

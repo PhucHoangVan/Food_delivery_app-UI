@@ -1,0 +1,127 @@
+@import url(./variable.css);
+
+/* PC */
+@media only screen and (min-width: 1024px){
+
+/* HEADER */
+    #header{
+        height: 156px;
+        padding: 0 40px;
+    }
+
+    .logo{
+        width: 100%;
+    }
+
+    .menu{
+        display: none;
+    }
+        
+    #navbar{
+        display: flex;
+        list-style: none;
+        text-decoration: none;
+        padding-left: 0;
+    }   
+
+    #navbar a{
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 1.6rem;
+        display: block;   
+        padding: 10px 40px;
+    }
+
+    #navbar a:hover{
+        color: var(--primary-color)
+    }
+
+/* BODY */
+
+    #body{
+        background-color: var(--white);
+    }
+
+/* Slider */
+
+    #slider{
+        position: relative;
+        background: url('./assets/images/slider.png') top center / cover no-repeat;
+        margin-bottom: 700px;
+        padding: 6% 0 10%;
+    }
+
+    .text-content__wrap{
+        position: relative;
+        color: var(--white);
+    }
+
+    .text-content__title{    
+        font-size: 2.4rem;
+    }
+
+    .text-content__desc{
+        font-size: 5.8rem;
+        line-height: 8rem;
+        width: 70%;
+    }
+
+    .text-content__download{
+        font-size: 2.4rem;
+        font-weight: 400;
+        margin-bottom: 50px;
+    }
+
+    .mobile-img__wrap{
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .seperate{
+        width: 60%;
+        margin: 0 auto;
+        border-top: 3px solid #E4E4E4;
+    }
+
+/* Content */
+
+    .contents{
+        width: 70%;
+    }
+
+    .content-heading{
+        font-size: 4.4rem;
+    }
+
+    .content-item{
+        padding: 80px 0;
+    }
+
+    .content-item__img + .content__info,
+    .content__info + .content-item__img{
+        margin-left: 20%;
+    }
+
+    .info-desc{
+        margin: 18px 0;
+    }
+
+/* Download */
+
+    .about-download{
+        position: relative;
+        background: url('./assets/images/illustration.png') top center / cover no-repeat;
+        padding: 10% 0 8%;
+    }
+
+    .about-download__content{
+        width: 100%;
+    }
+    
+/* OTHER */
+    .btn + .btn{
+        margin-left: 30px;
+    }
+}
